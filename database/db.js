@@ -3,8 +3,10 @@ const mongoose = require('mongoose')
 function connect() {
   mongoose.set('useNewUrlParser', true)
   mongoose.set('useUnifiedTopology', true)
+
+  const MONGODB_URI = 'mongodb+srv://jeanlima3915:39151806@cluster0.vwhpu.mongodb.net/crud-products-react?retryWrites=true&w=majority'
   
-  mongoose.connect('mongodb://localhost:27017/crud-products-react?readPreference=primary&appname=MongoDB%20Compass&ssl=false')
+  mongoose.connect(MONGODB_URI)
   
   const db = mongoose.connection
   
