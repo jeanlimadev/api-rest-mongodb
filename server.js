@@ -11,9 +11,9 @@ db.connect()
 
 // habilita cors
 const allowedOrigins = [
-  'http://localhost:3000',
-  'http://192.168.0.109:3000',
-  'http://192.168.0.109',
+  'http://localhost',
+  'https://crud-products-react.vercel.app',
+  'https://crud-products-react-g2cp15let-jeanlima3915.vercel.app',
 ]
 
 app.use(cors({
